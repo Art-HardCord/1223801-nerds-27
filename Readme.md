@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Артур Эльцер](https://up.htmlacademy.ru/htmlcss/27/user/1223801).
-* Наставник: `Неизвестно`.
+* Наставник: [Лиза Позднякова].(https://htmlacademy.ru/profile/lizzy)
 
 ---
 
