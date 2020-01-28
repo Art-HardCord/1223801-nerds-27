@@ -25,6 +25,29 @@
   </header>
   <main>
     <h1 class="catalog-title">Магазин готовых шаблонов</h1>
+    <h2 class="hidden">Фильтр магазина</h2>
+    <form method="post" action="https://echo.htmlacademy.ru">
+      <fieldset class="grid">
+        <legend>Сетка</legend>
+                    <input type="radio" id="Adaptive" name="fat" value="Adaptive" class="radio">
+                    <label for="Adaptive"> Адаптивная</label>
+                    <input type="radio" id="Fixed" name="fat" value="Fixed" checked class="radio">
+                    <label for="Fixed">Фиксированная</label>
+                    <input type="radio" id="Rubber" name="fat" value="Rubber" class="radio">
+                    <label for="Rubber">Резиновая</label>
+                  </fieldset>
+      <fieldset class="features">
+        <legend>Особенности</legend>
+                    <input type="checkbox" id="slider" name="slider" checked class="checkbox"><label for="slider"> Слайдер</label>
+                    <input type="checkbox" id="advantage-block" name="advantage-block" checked class="checkbox"><label for="advantage-block"> Блок преимуществ</label>
+                    <input type="checkbox" id="news" name="news" class="checkbox"><label for="news"> Новости</label>
+                    <input type="checkbox" id="gallery" name="gallery"><label for="gallery"> Галерея</label>
+                    <input type="checkbox" id="basket" name="basket" class="checkbox"><label for="basket"> Корзина</label>
+                  </fieldset>
+        <input type="submit" value="Показать">
+
+      </form>
+
 
     <section>
         <h2>Примеры сайтов</h2>
