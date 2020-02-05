@@ -11,7 +11,8 @@ body {
 a {
   text-decoration: none;
 }
-.header {
+.header,
+.preview-slider {
   background-color: #eeeeee;
 }
 .nav a {
@@ -24,6 +25,24 @@ a {
 .partners-list,
 .feedback-groups,
 .social-item,
-.site-item {
+.site-item,
+.service-list {
   list-style: none;
+}
+.visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.btn-slider {
+  color: white;
+}
+.service-list a{
+  color: white;
+  background-color: red;
 }
