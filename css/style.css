@@ -11,6 +11,15 @@ body {
 a {
   text-decoration: none;
 }
+img {
+  max-width: 100%;
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 .header,
 .preview-slider {
   background-color: #eeeeee;
