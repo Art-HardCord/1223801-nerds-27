@@ -144,25 +144,28 @@
       <a class="contacts-tel" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
       <a class="btn-send" href="mailto:name@email.com">Напишите нам</a>
     </address>
-    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-      <h2>Напишите нам</h2>
-      <ul class="feedback-groups">
-        <li class="feedback-group">
-          <label for="login">Ваше имя</label>
-          <input type="text" name="login" id="login" placeholder="Имя Фамилия" required="" autofocus="">
-        </li>
-        <li class="feedback-group">
-          <label for="mail">Ваш e-mail:</label>
-          <input type="text" name="mail" id="mail" placeholder="email@example.com" required="">
-        </li>
-        <li class="feedback-group feedback-message">
-          <label for="text">Текст письма:</label>
-          <textarea name="text" id="text" placeholder="В свободной форме" required=""></textarea>
-        </li>
-      </ul>
-      <button class="btn form-submit" type="submit">Отправить</button>
+    <div class="popup">
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <h2>Напишите нам</h2>
+        <ul class="feedback-groups">
+          <li class="feedback-group">
+            <label for="login">Ваше имя</label>
+            <input type="text" name="login" id="login" placeholder="Имя Фамилия" required="" autofocus="">
+          </li>
+          <li class="feedback-group">
+            <label for="mail">Ваш e-mail:</label>
+            <input type="email" name="mail" id="mail" placeholder="email@example.com" required="">
+          </li>
+          <li class="feedback-group feedback-message">
+            <label for="text">Текст письма:</label>
+            <textarea name="text" id="text" placeholder="В свободной форме" required=""></textarea>
+          </li>
+        </ul>
+        <button class="btn form-submit" type="submit">Отправить</button>
+        
+      </form>
       <button class="popup-close" type="button"><span class="visually-hidden">Закрыть</span></button>
-    </form>
+    </div>
 
     <ul class="social">
       <li class="social-item">
