@@ -18,6 +18,16 @@ a {
 .nav a {
   color: black;
 }
+.nav a:hover{
+  color: #fb565a;
+}
+.nav a:active{
+  color:  rgba(0, 0, 0, 0.3);
+}
+.nav-active a{
+  text-decoration: underline;
+  text-decoration: #fb565a;
+}
 .nav-list,
 .basket,
 .slider-list,
