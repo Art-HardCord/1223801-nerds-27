@@ -2,141 +2,142 @@
 <html lang="ru">
 
 <head>
-  <meta charset="utf-8">
-  <title>HTML Academy: Нёрдс</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <header class="header">
-    <nav class="nav">
-      <a href="#" class="header-logo">
-        <img class="header-logo-img" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Nerds">
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-item-link" href="#">Студия</a></li>
-        <li class="nav-item">
-          <a class="nav-item-link" href="#">Клиенты</a></li>
-        <li class="nav-item-active">
-          <a class="nav-item-link" href="catalog.html">Магазин</a></li>
-        <li class="nav-item">
-          <a class="nav-item-link" href="">Контакты</a></li>
-      </ul>
-      <ul class="basket">
-        <li class="nav-item nav-item-basket">
-          <a href="#"><img class="nav-basket-logo" src="img/basket-icon.svg" alt="иконка корзины">
-            Корзина</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <h1 class="catalog-title">Магазин готовых шаблонов</h1>
-    <h2 class="visually-hidden">Фильтр магазина</h2>
-    <ul class="sort-items">
-      <li class="sort-title">Сортировать:</li>
-      <li class="sorting"><a class="active-sorting" href="">По цене</a></li>
-      <li class="sorting"><a class="link-sorting" href="">По типу</a></li>
-      <li class="sorting"><a class="link-sorting" href="">По названию</a></li>
-    </ul>
-    <form method="post" action="https://echo.htmlacademy.ru">
-      <fieldset class="grid">
-        <legend>Сетка</legend>
-        <input type="radio" id="adaptive" name="grid" value="adaptive" class="radio">
-        <label for="adaptive"> Адаптивная</label>
-        <input type="radio" id="fixed" name="grid" value="fixed" checked class="radio">
-        <label for="fixed">Фиксированная</label>
-        <input type="radio" id="rubber" name="grid" value="rubber" class="radio">
-        <label for="rubber">Резиновая</label>
-      </fieldset>
-      <fieldset class="features">
-        <legend>Особенности</legend>
-        <input type="checkbox" id="slider" name="feature" checked class="checkbox"><label for="slider"> Слайдер</label>
-        <input type="checkbox" id="advantage-block" name="feature" checked class="checkbox"><label
-          for="advantage-block"> Блок преимуществ</label>
-        <input type="checkbox" id="news" name="feature" class="checkbox"><label for="news"> Новости</label>
-        <input type="checkbox" id="gallery" name="feature"><label for="gallery"> Галерея</label>
-        <input type="checkbox" id="basket" name="feature" class="checkbox"><label for="basket"> Корзина</label>
-      </fieldset>
-      <input type="submit" value="Показать">
+    <header class="main-header">
+        <nav class="nav">
+            <a href="#" class="nav__header-logo">
+                <img class="header-logo-img" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Nerds">
+            </a>
+            <ul class="nav__list">
+                <li class="nav-item">
+                    <a class="nav-item__link" href="#">Студия</a></li>
+                <li class="nav-item">
+                    <a class="nav-item__link" href="#">Клиенты</a></li>
+                <li class="nav-item">
+                    <a class="nav-item__link" href="catalog.html">Магазин</a></li>
+                <li class="nav-item">
+                    <a class="nav-item__link" href="">Контакты</a></li>
+            </ul>
+            <ul class="nav__list">
+                <li class="nav-item__link nav-item__baket">
+                    <a href="#">
+                        <img class="nav-basket-logo" src="img/basket-icon.svg" alt="иконка корзины"> Корзина
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="catalog-title">Магазин готовых шаблонов</h1>
+        <h2 class="visually-hidden">Фильтр магазина</h2>
+        <ul class="sort-items">
+            <li class="sort-title">Сортировать:</li>
+            <li class="sorting"><a class="active-sorting" href="">По цене</a></li>
+            <li class="sorting"><a class="link-sorting" href="">По типу</a></li>
+            <li class="sorting"><a class="link-sorting" href="">По названию</a></li>
+        </ul>
+        <form method="post" action="https://echo.htmlacademy.ru">
+            <fieldset class="grid">
+                <legend>Сетка</legend>
+                <input type="radio" id="adaptive" name="grid" value="adaptive" class="radio">
+                <label for="adaptive"> Адаптивная</label>
+                <input type="radio" id="fixed" name="grid" value="fixed" checked class="radio">
+                <label for="fixed">Фиксированная</label>
+                <input type="radio" id="rubber" name="grid" value="rubber" class="radio">
+                <label for="rubber">Резиновая</label>
+            </fieldset>
+            <fieldset class="features">
+                <legend>Особенности</legend>
+                <input type="checkbox" id="slider" name="feature" checked class="checkbox"><label for="slider"> Слайдер</label>
+                <input type="checkbox" id="advantage-block" name="feature" checked class="checkbox"><label for="advantage-block"> Блок преимуществ</label>
+                <input type="checkbox" id="news" name="feature" class="checkbox"><label for="news"> Новости</label>
+                <input type="checkbox" id="gallery" name="feature"><label for="gallery"> Галерея</label>
+                <input type="checkbox" id="basket" name="feature" class="checkbox"><label for="basket"> Корзина</label>
+            </fieldset>
+            <input type="submit" value="Показать">
 
-    </form>
-
-
-    <section>
-      <h2>Примеры сайтов</h2>
-      <ul class="site-list">
-        <li class="site-item">
-          <a href="">
-            <figure><img src="img/sedona-preview.jpg" width="360" height="576" alt="Превью сайта седона"></figure>
-          </a>
-          <div class="visually-hidden">
-            <h3>Sedona</h3>
-            <p class="products-info">Информационный сайт для туристов</p>
-            <a href="#" class="btn">9900</a>
-          </div>
-        </li>
-        <li class="site-item">
-          <a href="">
-            <figure><img src="img/site-pink-preview.jpg" width="360" height="576" alt="Превью сайта PINK"></figure>
-          </a>
-          <div class="visually-hidden">
-            <h3>Pink App</h3>
-            <p class="products-info">Продуктовый лендинг приложения для iOS и Android</p>
-            <a href="#" class="btn">9900</a>
-          </div>
-        </li>
-        <li class="site-item">
-          <a href="">
-            <figure><img src="img/img-barbershop.jpg" width="360" height="576" alt="Превью сайта Барбершоп"></figure>
-          </a>
-          <div class="visually-hidden">
-            <h3>Barbershop</h3>
-            <p class="products-info">Сайт салона красоты. Для мужчин, да.</p>
-            <a href="#" class="btn">9900</a>
-          </div>
-        </li>
-        <li class="site-item">
-          <a href="">
-            <figure><img src="img/img-mishka.jpg" width="360" height="576" alt="Превью сайта Мишка"></figure>
-          </a>
-          <div class="visually-hidden">
-            <h3>Mishka</h3>
-            <p class="products-info">Интернет-магазин вязаных игрушек</p>
-            <a href="#" class="btn">9900</a>
-          </div>
-        </li>
-        <li class="site-item">
-          <a href="">
-            <figure><img src="img/img-aplus.jpg" width="360" height="576" alt="Превью сайта A-плюс"></figure>
-          </a>
-          <div class="visually-hidden">
-            <h3>A plus</h3>
-            <p class="products-info">Лендинг курсов повышения квалификации</p>
-            <a href="#" class="btn">9900</a>
-          </div>
-        </li>
-        <li class="site-item">
-          <a href="">
-            <figure><img src="img/img-kvast.jpg" width="360" height="576" alt="Превью сайта Кваст"></figure>
-          </a>
-          <div class="visually-hidden">
-            <h3>Кваст</h3>
-            <p class="products-info">Промо-сайт производителя крафтового кваса</p>
-            <a href="#" class="btn">9900</a>
-          </div>
-        </li>
-      </ul>
-    </section>
+        </form>
 
 
+        <section>
+            <h2>Примеры сайтов</h2>
+            <ul class="site-list">
+                <li class="site-item">
+                    <a href="">
+                        <figure><img src="img/sedona-preview.jpg" width="360" height="576" alt="Превью сайта седона"></figure>
+                    </a>
+                    <div class="visually-hidden">
+                        <h3>Sedona</h3>
+                        <p class="products-info">Информационный сайт для туристов</p>
+                        <a href="#" class="btn">9900</a>
+                    </div>
+                </li>
+                <li class="site-item">
+                    <a href="">
+                        <figure><img src="img/site-pink-preview.jpg" width="360" height="576" alt="Превью сайта PINK"></figure>
+                    </a>
+                    <div class="visually-hidden">
+                        <h3>Pink App</h3>
+                        <p class="products-info">Продуктовый лендинг приложения для iOS и Android</p>
+                        <a href="#" class="btn">9900</a>
+                    </div>
+                </li>
+                <li class="site-item">
+                    <a href="">
+                        <figure><img src="img/img-barbershop.jpg" width="360" height="576" alt="Превью сайта Барбершоп"></figure>
+                    </a>
+                    <div class="visually-hidden">
+                        <h3>Barbershop</h3>
+                        <p class="products-info">Сайт салона красоты. Для мужчин, да.</p>
+                        <a href="#" class="btn">9900</a>
+                    </div>
+                </li>
+                <li class="site-item">
+                    <a href="">
+                        <figure><img src="img/img-mishka.jpg" width="360" height="576" alt="Превью сайта Мишка"></figure>
+                    </a>
+                    <div class="visually-hidden">
+                        <h3>Mishka</h3>
+                        <p class="products-info">Интернет-магазин вязаных игрушек</p>
+                        <a href="#" class="btn">9900</a>
+                    </div>
+                </li>
+                <li class="site-item">
+                    <a href="">
+                        <figure><img src="img/img-aplus.jpg" width="360" height="576" alt="Превью сайта A-плюс"></figure>
+                    </a>
+                    <div class="visually-hidden">
+                        <h3>A plus</h3>
+                        <p class="products-info">Лендинг курсов повышения квалификации</p>
+                        <a href="#" class="btn">9900</a>
+                    </div>
+                </li>
+                <li class="site-item">
+                    <a href="">
+                        <figure><img src="img/img-kvast.jpg" width="360" height="576" alt="Превью сайта Кваст"></figure>
+                    </a>
+                    <div class="visually-hidden">
+                        <h3>Кваст</h3>
+                        <p class="products-info">Промо-сайт производителя крафтового кваса</p>
+                        <a href="#" class="btn">9900</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
 
-  </main>
-  <footer class="footer">
-    <h2 class="visually-hidden">Наши контакты</h2>
-    <address class="contacts">
+
+
+    </main>
+    <footer class="footer">
+        <h2 class="visually-hidden">Наши контакты</h2>
+        <address class="contacts">
       <h3>NЁRDS DESIGN STUDIO</h3>
       <p class="address-content">
         191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
@@ -144,45 +145,45 @@
       <a class="contacts-tel" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
       <a class="btn-send" href="mailto:name@email.com">Напишите нам</a>
     </address>
-    <div class="popup">
-      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-        <h2>Напишите нам</h2>
-        <ul class="feedback-groups">
-          <li class="feedback-group">
-            <label for="login">Ваше имя</label>
-            <input type="text" name="login" id="login" placeholder="Имя Фамилия" required="" autofocus="">
-          </li>
-          <li class="feedback-group">
-            <label for="mail">Ваш e-mail:</label>
-            <input type="email" name="mail" id="mail" placeholder="email@example.com" required="">
-          </li>
-          <li class="feedback-group feedback-message">
-            <label for="text">Текст письма:</label>
-            <textarea name="text" id="text" placeholder="В свободной форме" required=""></textarea>
-          </li>
-        </ul>
-        <button class="btn form-submit" type="submit">Отправить</button>
-        
-      </form>
-      <button class="popup-close" type="button"><span class="visually-hidden">Закрыть</span></button>
-    </div>
+        <div class="popup">
+            <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+                <h2>Напишите нам</h2>
+                <ul class="feedback-groups">
+                    <li class="feedback-group">
+                        <label for="login">Ваше имя</label>
+                        <input type="text" name="login" id="login" placeholder="Имя Фамилия" required="" autofocus="">
+                    </li>
+                    <li class="feedback-group">
+                        <label for="mail">Ваш e-mail:</label>
+                        <input type="email" name="mail" id="mail" placeholder="email@example.com" required="">
+                    </li>
+                    <li class="feedback-group feedback-message">
+                        <label for="text">Текст письма:</label>
+                        <textarea name="text" id="text" placeholder="В свободной форме" required=""></textarea>
+                    </li>
+                </ul>
+                <button class="btn form-submit" type="submit">Отправить</button>
 
-    <ul class="social">
-      <li class="social-item">
-        <a class="social-link" href=""><img src="img/vk-icon.svg" alt="VK logo">Вконтакте</a>
-      </li>
-      <li class="social-item">
-        <a class="social-link" href=""> <img src="img/fb-icon.svg" alt="FB logo"> Facebook</a>
-      </li>
-      <li class="social-item">
-        <a class="social-link" href=""> <img src="img/insta-icon.svg" alt="Instagram logo"> Instagram</a>
-      </li>
-    </ul>
-    <div>
-      <h3 class="footer-appeal">Давайте дружить, это выгодно!</h3>
-      <p class="footer-discount">Скидка 10% для друзей из социальных сетей.</p>
-    </div>
-  </footer>
+            </form>
+            <button class="popup-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+        </div>
+
+        <ul class="social">
+            <li class="social-item">
+                <a class="social-link" href=""><img src="img/vk-icon.svg" alt="VK logo">Вконтакте</a>
+            </li>
+            <li class="social-item">
+                <a class="social-link" href=""> <img src="img/fb-icon.svg" alt="FB logo"> Facebook</a>
+            </li>
+            <li class="social-item">
+                <a class="social-link" href=""> <img src="img/insta-icon.svg" alt="Instagram logo"> Instagram</a>
+            </li>
+        </ul>
+        <div>
+            <h3 class="footer-appeal">Давайте дружить, это выгодно!</h3>
+            <p class="footer-discount">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+    </footer>
 
 </body>
 
