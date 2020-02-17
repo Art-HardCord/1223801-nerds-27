@@ -91,53 +91,56 @@
 
         <section class="about">
             <h2 class="visually-hidden">О нас</h2>
-            <p class="about-header">
-                Мы — маленькая, но гордая дизайн-студия из Краснодара.
-            </p>
-            <p class="about-principles">
-                Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.
-            </p>
-            <p class="about-list">
-                Выполняем заказы на разработку:
-            </p>
-            <ul class="about-list">
-                <li class="about-item">Веб-сайтов любой сложности</li>
-                <li class="about-item">Мобильных приложений для iOS и Android</li>
-                <li class="about-item">Слайдшоу и видео для корпоративных презентаций</li>
-            </ul>
+            <div class="about__content">
+                <p class="about__intro">
+                    Мы — маленькая, но гордая дизайн-студия из Краснодара.
+                </p>
+                <p class="about__principles">
+                    Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.
+                </p>
+                <p class="about__top-list">
+                    Выполняем заказы на разработку:
+                </p>
+
+                <ul class="about__list">
+                    <li class="about__item">Веб-сайтов любой сложности</li>
+                    <li class="about__item">Мобильных приложений для iOS и Android</li>
+                    <li class="about__item">Слайдшоу и видео для корпоративных презентаций</li>
+                </ul>
+            </div>
             <img src="img/nerds-illustration.png" width="360" height="208" alt="Яркий логотип Нёрдс">
-            <table class="about-table">
-                <caption>с 2004 года Любим точность во всем:</caption>
-                <tr>
-                    <td>146%</td>
-                    <td>100%</td>
-                    <td>50%</td>
+            <table class="about__table table">
+                <caption class="table__title">с 2004 года Любим точность во всем:</caption>
+                <tr class="table__row table__row--1">
+                    <td class="table__column table__column--1">146<sup class="percent">%</sup></td>
+                    <td class="table__column table__column--2">100<sup class="percent">%</sup></td>
+                    <td class="table__column table__column--3">50<sup class="percent">%</sup></td>
                 </tr>
-                <tr>
-                    <td>Уровень самоотдачи</td>
-                    <td>Соблюдение сроков</td>
-                    <td>Минимальная предоплата</td>
+                <tr class="table__row table__row--2">
+                    <td class="table__column table__column--1">Уровень самоотдачи</td>
+                    <td class="table__column table__column--2">Соблюдение сроков</td>
+                    <td class="table__column table__column--3">Минимальная предоплата</td>
                 </tr>
             </table>
         </section>
         <section class="partners">
             <h2 class="visually-hidden">Наши партнёры</h2>
             <div class="container">
-                <ul class="partners-list">
-                    <li class="partners-item">
-                        <a href="#" class="partners-link">
+                <ul class="partners__list">
+                    <li class="partners__item">
+                        <a href="#" class="partners__link">
                             <img src="img/html-academy-partners-logo.png" alt="HTML Academy" width="199" height="68"></a>
                     </li>
-                    <li class="partners-item">
-                        <a href="#" class="partners-link">
+                    <li class="partners__item">
+                        <a href="#" class="partners__link">
                             <img src="img/partners-barber-logo.png" alt="Барбершоп Бородинский" width="209" height="90"></a>
                     </li>
-                    <li class="partners-item">
-                        <a href="#" class="partners-link">
+                    <li class="partners__item">
+                        <a href="#" class="partners__link">
                             <img src="img/partners-pink-logo.png" alt="Пинк" width="185" height="52"></a>
                     </li>
-                    <li class="partners-item">
-                        <a href="#" class="partners-link">
+                    <li class="partners__item">
+                        <a href="#" class="partners__link">
                             <img src="img/partners-mishka-logo.png" alt="Мишка" width="173" height="84"></a>
                     </li>
                 </ul>
@@ -147,13 +150,13 @@
     <footer class="footer">
         <h2 class="visually-hidden">Наши контакты</h2>
         <address class="contacts">
-      <h3>NЁRDS DESIGN STUDIO</h3>
-      <p class="address-content">
-        191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-      </p>
-      <a class="contacts-tel" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-      <a class="btn-send" href="mailto:name@email.com">Напишите нам</a>
-    </address>
+            <h3>NЁRDS DESIGN STUDIO</h3>
+            <p class="address-content">
+                191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+            </p>
+            <a class="contacts-tel" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+            <a class="btn-send" href="mailto:name@email.com">Напишите нам</a>
+        </address>
         <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
             <h2>Напишите нам</h2>
             <ul class="feedback-groups">
