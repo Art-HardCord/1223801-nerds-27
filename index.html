@@ -11,7 +11,7 @@
 
 <body>
     <header class="main-header">
-        <nav class="nav">
+        <nav class="nav wrap-center">
             <a href="#" class="nav__header-logo">
                 <img class="nav__logo-img" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Nerds">
             </a>
@@ -25,7 +25,7 @@
                 <li class="nav__item">
                     <a class="nav__link" href="">Контакты</a></li>
             </ul>
-            <ul class="nav__list">
+            <ul class="nav__list nav__list--basket">
                 <li class="nav__item">
                     <a class="nav__link nav__link--card-icon" href="#">
                         <img class="nav__basket-logo" src="img/basket-icon.svg" alt="иконка корзины"> Корзина
@@ -43,7 +43,7 @@
         <section class="slider">
             <h2 class="visually-hidden">Слайды с предложениями</h2>
             <ul class="slider__list">
-                <li class="slider__item">
+                <li class="slider__item slider__item--active">
                     <h3 class="slider__title">Долго, дорого, скрупулезно.</h3>
                     <p class="slider__description">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.
                     </p>
@@ -63,7 +63,7 @@
                 </li>
             </ul>
         </section>
-        <section class="advantages">
+        <section class="advantages wrap-center">
             <h2 class="visually-hidden">Преимущества</h2>
             <ul class="advantages__list">
                 <li class="advantages__item advantages__item--web">
@@ -108,20 +108,23 @@
                     <li class="about__item">Слайдшоу и видео для корпоративных презентаций</li>
                 </ul>
             </div>
-            <img src="img/nerds-illustration.png" width="360" height="208" alt="Яркий логотип Нёрдс">
-            <table class="about__table table">
-                <caption class="table__title">с 2004 года Любим точность во всем:</caption>
-                <tr class="table__row">
-                    <td class="table__column">146<sup class="percent">%</sup></td>
-                    <td class="table__column">100<sup class="percent">%</sup></td>
-                    <td class="table__column">50<sup class="percent">%</sup></td>
-                </tr>
-                <tr class="table__row">
-                    <td class="table__column">Уровень самоотдачи</td>
-                    <td class="table__column">Соблюдение сроков</td>
-                    <td class="table__column">Минимальная предоплата</td>
-                </tr>
-            </table>
+
+            <div class="about__promo">
+                <img src="img/nerds-illustration.png" width="360" height="208" alt="Яркий логотип Нёрдс">
+                <table class="about__table table">
+                    <caption class="table__title">с 2004 года Любим точность во всем:</caption>
+                    <tr class="table__row">
+                        <td class="table__column">146<sup class="percent">%</sup></td>
+                        <td class="table__column">100<sup class="percent">%</sup></td>
+                        <td class="table__column">50<sup class="percent">%</sup></td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__column">Уровень самоотдачи</td>
+                        <td class="table__column">Соблюдение сроков</td>
+                        <td class="table__column">Минимальная предоплата</td>
+                    </tr>
+                </table>
+            </div>
         </section>
         <section class="partners">
             <h2 class="visually-hidden">Наши партнёры</h2>
@@ -129,7 +132,7 @@
                 <ul class="partners__list">
                     <li class="partners__item">
                         <a href="#" class="partners__link">
-                            <img src="img/html-academy-partners-logo.png" alt="HTML Academy" width="199" height="68"></a>
+                            <img src="img/partners-htmlacademy-logo.png" alt="HTML Academy" width="199" height="68"></a>
                     </li>
                     <li class="partners__item">
                         <a href="#" class="partners__link">
@@ -172,6 +175,7 @@
             </li>
         </ul>
         <div>
+            <!-- /*надо тут понять как завернуть*/ -->
             <h3 class="footer-appeal">Давайте дружить, это выгодно!</h3>
             <p class="footer-discount">Скидка 10% для друзей из социальных сетей.</p>
         </div>
@@ -197,8 +201,7 @@
             <button class="feedback-form__btn btn-submit" type="submit">Отправить</button>
 
         </form>
-        <button class="feedback-form__btn btn-close" type="button"><span
-            class="visually-hidden">Закрыть</span></button>
+        <button class="feedback-form__btn btn-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </div>
 
 </body>
