@@ -94,13 +94,6 @@ a {
     line-height: 30px;
 }
 
-.nav__link {
-    color: #000000;
-    font-weight: 500;
-    text-decoration: none;
-    line-height: 30px;
-}
-
 .nav__list {
     display: flex;
     justify-content: center;
@@ -237,7 +230,7 @@ a {
 .about {
     position: relative;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .about__content {
