@@ -43,7 +43,7 @@
         <section class="slider">
             <h2 class="visually-hidden">Слайды с предложениями</h2>
             <ul class="slider__list">
-                <li class="slider__item slider__item--active">
+                <li class="slider__item slider__item--active wrap-center">
                     <h3 class="slider__title">Долго, дорого, скрупулезно.</h3>
                     <p class="slider__description">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.
                     </p>
@@ -89,7 +89,7 @@
         </section>
 
 
-        <section class="about">
+        <section class="about wrap-center">
             <h2 class="visually-hidden">О нас</h2>
             <div class="about__content">
                 <p class="about__intro">
@@ -126,7 +126,7 @@
                 </table>
             </div>
         </section>
-        <section class="partners">
+        <section class="partners wrap-center">
             <h2 class="visually-hidden">Наши партнёры</h2>
             <div class="container">
                 <ul class="partners__list">
@@ -150,7 +150,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer wrap-center">
         <h2 class="visually-hidden">Наши контакты</h2>
         <address class="contacts">
             <h3 class="contacts__title">NЁRDS DESIGN STUDIO</h3>
@@ -161,23 +161,25 @@
             <a class="contacts__btn btn" href="mailto:name@email.com">Напишите нам</a>
         </address>
 
+        <div class="wrap-center">
+            <ul class="social">
+                <li class="social__item">
+                    <a class="social__link social__link--vk" href=""><img src="img/vk-icon.svg" alt="VK logo">Вконтакте</a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link social__link--fb" href=""> <img src="img/fb-icon.svg" alt="FB logo"> Facebook
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link social__link--inst" href=""> <img src="img/insta-icon.svg" alt="Instagram logo"> Instagram
+                    </a>
+                </li>
+            </ul>
+            <div class="offer">
 
-        <ul class="social">
-            <li class="social__item">
-                <a class="social__link social__link--vk" href=""><img src="img/vk-icon.svg" alt="VK logo">Вконтакте</a>
-            </li>
-            <li class="social__item">
-                <a class="social__link social__link--fb" href=""> <img src="img/fb-icon.svg" alt="FB logo"> Facebook</a>
-            </li>
-            <li class="social__item">
-                <a class="social__link social__link--inst" href=""> <img src="img/insta-icon.svg" alt="Instagram logo"> Instagram
-                </a>
-            </li>
-        </ul>
-        <div>
-            <!-- /*надо тут понять как завернуть*/ -->
-            <h3 class="footer-appeal">Давайте дружить, это выгодно!</h3>
-            <p class="footer-discount">Скидка 10% для друзей из социальных сетей.</p>
+                <h3 class="offer__appeal">Давайте дружить, это выгодно!</h3>
+                <p class="offer__discount">Скидка 10% для друзей из социальных сетей.</p>
+            </div>
         </div>
     </footer>
 
@@ -201,7 +203,7 @@
             <button class="feedback-form__btn btn-submit" type="submit">Отправить</button>
 
         </form>
-        <button class="feedback-form__btn btn-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+        <button class="modal__btn btn-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </div>
 
 </body>
