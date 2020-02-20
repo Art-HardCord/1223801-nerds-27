@@ -81,6 +81,7 @@ a {
     flex-wrap: wrap;
     box-sizing: border-box;
     text-transform: uppercase;
+    justify-content: space-between;
 }
 
 .nav__link {
@@ -104,6 +105,11 @@ a {
     padding-bottom: 0;
     padding-left: 23px;
 }
+
+
+/* .nav__link--card {
+    padding-left: 500px;
+} */
 
 
 /* .nav__link--card-icon { */
@@ -291,14 +297,130 @@ a {
     position: relative;
 }
 
+.contacts {
+    width: 319px;
+    height: 308px;
+    display: inline-block;
+    padding: 50px;
+}
+
+.contacts__title {
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: left;
+}
+
+.contacts__content,
+.contacts__tel {
+    width: 200px;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.13;
+    letter-spacing: normal;
+    text-align: left;
+    color: #666666;
+}
+
+.contacts__btn {
+    font-style: normal;
+}
+
 .social {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 80px;
+}
+
+.social__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     list-style: none;
 }
 
-.contacts {
-    width: 300px;
+.social__link {
+    display: flex;
+    width: 79px;
+    height: 79px;
+    align-items: center;
+    justify-content: center;
+    background-color: #e1e1e1;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.social__link:hover,
+.social__link:focus {
+    background-color: #e74246;
+}
+
+.offer {
+    display: flex;
+    padding-left: 139px;
+    flex-direction: column;
+}
+
+.offer__appeal {
+    font-size: 36px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    margin-bottom: 12px;
+}
+
+.offer__discount {
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    text-align: left;
+    margin-top: 0;
+}
+
+
+/* ////////////modal\\\\\\\\\\\\\\\ */
+
+.feedback-form {
+    /* position: absolute;
+    top: -55px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    padding-top: 75px;
+    padding-right: 100px;
+    padding-bottom: 85px;
+    padding-left: 100px; */
+    width: 960px;
+    height: 590px;
+    box-sizing: border-box;
+    background: #ffffff;
+    box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
+}
+
+.feedback-form__list {
+    list-style: none;
+    /* почему-то не наследует от feedback-form */
+}
+
+.feedback-form__title {
+    font-size: 45px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    margin-bottom: 49px;
 }
