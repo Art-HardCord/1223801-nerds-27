@@ -31,6 +31,9 @@ a {
     text-decoration: none;
 }
 
+
+/* /////////////кнопочки\\\\\\\\\\\\\\ */
+
 .btn {
     display: inline-block;
     padding-top: 16px;
@@ -48,6 +51,51 @@ a {
     border: 1 solid #eeeeee;
     border-radius: 3px;
     cursor: pointer;
+}
+
+.advantages__link--red {
+    color: #ffffff;
+    background-color: #fb565a;
+}
+
+.advantages__link--red:hover {
+    background-color: #e74246;
+}
+
+.advantages__link--red:active {
+    background-color: #d7373b;
+    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.advantages__link--green {
+    color: #ffffff;
+    background-color: #00ca74;
+}
+
+.advantages__link--green:hover {
+    background-color: #00bc6c;
+}
+
+.advantages__link--green:active {
+    background-color: #00aa62;
+    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.advantages__link--yellow {
+    color: #ffffff;
+    background-color: #efc84a;
+}
+
+.advantages__link--yellow:hover {
+    background-color: #eab534;
+}
+
+.advantages__link--yellow:active {
+    background-color: #e5a722;
+    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .wrap-center {
@@ -89,6 +137,14 @@ a {
     font-weight: 500;
     text-decoration: none;
     line-height: 30px;
+}
+
+.nav__link:hover {
+    color: #fb565a;
+}
+
+.nav__link:active {
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .nav__list {
@@ -392,16 +448,16 @@ a {
 /* ////////////modal\\\\\\\\\\\\\\\ */
 
 .feedback-form {
-    /* position: absolute;
+    position: absolute;
     top: -55px;
     margin-top: 0;
     margin-right: auto;
     margin-bottom: 0;
     margin-left: auto;
-    padding-top: 75px;
+    padding-top: 55px;
     padding-right: 100px;
-    padding-bottom: 85px;
-    padding-left: 100px; */
+    padding-bottom: 84px;
+    padding-left: 100px;
     width: 960px;
     height: 590px;
     box-sizing: border-box;
@@ -410,8 +466,10 @@ a {
 }
 
 .feedback-form__list {
+    display: flex;
     list-style: none;
-    /* почему-то не наследует от feedback-form */
+    flex-wrap: wrap;
+    padding-left: 0;
 }
 
 .feedback-form__title {
@@ -423,4 +481,14 @@ a {
     letter-spacing: normal;
     text-align: left;
     margin-bottom: 49px;
+}
+
+.feedback-form__item {
+    width: 360px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    height: auto;
+    flex-grow: 1;
 }
