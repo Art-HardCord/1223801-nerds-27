@@ -418,7 +418,7 @@ a {
 
 .offer {
     display: flex;
-    padding-left: 139px;
+    margin-left: auto;
     flex-direction: column;
 }
 
@@ -447,19 +447,15 @@ a {
 
 /* ////////////modal\\\\\\\\\\\\\\\ */
 
-.feedback-form {
-    position: absolute;
-    top: -55px;
-    margin-top: 0;
-    margin-right: auto;
-    margin-bottom: 0;
-    margin-left: auto;
+.modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     padding-top: 55px;
     padding-right: 100px;
     padding-bottom: 84px;
     padding-left: 100px;
-    width: 960px;
-    height: 590px;
     box-sizing: border-box;
     background: #ffffff;
     box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
@@ -475,11 +471,6 @@ a {
 .feedback-form__title {
     font-size: 45px;
     font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1;
-    letter-spacing: normal;
-    text-align: left;
     margin-bottom: 49px;
 }
 
@@ -491,4 +482,9 @@ a {
     margin: 0 auto;
     height: auto;
     flex-grow: 1;
+}
+
+.feedback-form__item--name,
+.feedback-form__item--mail {
+    width: 400px;
 }
