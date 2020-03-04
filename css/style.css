@@ -512,9 +512,22 @@ a {
     margin-right: 10px;
 }
 
+.store-filter__heading {
+    font-size: 18px;
+    font-weight: bold;
+}
+
 .store-filter__selection {
     display: flex;
     flex-direction: column;
+    border: none;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: left;
 }
 
 .sort {
@@ -544,10 +557,11 @@ a {
 .site-list {
     display: flex;
     width: 100%;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-wrap: wrap;
     align-items: flex-start;
     list-style: none;
+    border: solid 2px green;
 }
 
 .site-item {
@@ -569,7 +583,8 @@ a {
 }
 
 .catalog-title {
-    padding: 100px;
+    padding: 116px;
+    font-size: 55px;
 }
 
 

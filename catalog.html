@@ -50,6 +50,27 @@
         <div class="store wrap-center">
 
             <form class="store-filter" method="post" action="https://echo.htmlacademy.ru">
+                <span class="filters__title">Стоимость:</span>
+                <div class="double-range__range">
+                    <div class="double-range__controls">
+                        <div class="double-range__scale">
+                            <div class="double-range__bar"></div>
+                        </div>
+                        <button class="double-range__toggle double-range__toggle-min"></button>
+                        <button class="double-range__toggle double-range__toggle-max"></button>
+                    </div>
+                    <div class="double-range__price">
+                        <p class="double-range__wrapper">
+                            <label class="double-range__label" for="min-value">от</label>
+                            <input id="min-value" class="double-range__input" name="min-value" type="number" value="0" min="0" max="15000">
+                        </p>
+                        <p class="double-range__wrapper">
+                            <label class="double-range__label" for="max-value">до</label>
+                            <input id="max-value" class="double-range__input" name="max-value" type="number" value="15000" min="1" max="15000">
+                        </p>
+                    </div>
+                </div>
+
                 <fieldset class="store-filter__selection">
                     <legend class="store-filter__heading">Сетка</legend>
                     <input class="visually-hidden store-filter__radio" type="radio" id="adaptive" name="grid" value="adaptive">
@@ -60,7 +81,7 @@
                     <label for="rubber">Резиновая</label>
                 </fieldset>
                 <fieldset class="store-filter__selection">
-                    <legend>Особенности</legend>
+                    <legend class="store-filter__heading">Особенности</legend>
                     <input type="checkbox" id="slider" name="feature" checked class="visually-hidden store-filter__check">
                     <label class="store-filter__input store-filter__input--check" for="slider">Слайдер</label>
                     <input type="checkbox" id="advantage-block" name="feature" checked class="visually-hidden store-filter__check">
