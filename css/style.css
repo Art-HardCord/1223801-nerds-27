@@ -101,6 +101,7 @@ a {
 .wrap-center {
     width: 1200px;
     margin: 0 auto;
+    position: relative;
 }
 
 .visually-hidden {
@@ -357,7 +358,16 @@ a {
     width: 319px;
     height: 308px;
     display: inline-block;
-    padding: 50px;
+    position: absolute;
+    top: 54px;
+    left: 140px;
+    width: 319px;
+    height: 308px;
+    z-index: 1;
+    box-sizing: border-box;
+    margin-left: 20px;
+    padding: 35px 50px 50px;
+    background-color: #ffffff;
 }
 
 .contacts__title {
@@ -449,6 +459,7 @@ a {
 
 .modal {
     position: fixed;
+    z-index: 2;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -487,4 +498,93 @@ a {
 .feedback-form__item--name,
 .feedback-form__item--mail {
     width: 400px;
+}
+
+
+/* ////////////catalog\\\\\\\\\\\\\\ */
+
+.store {
+    display: flex;
+}
+
+.store-filter {
+    width: 261px;
+    margin-right: 10px;
+}
+
+.store-filter__selection {
+    display: flex;
+    flex-direction: column;
+}
+
+.sort {
+    display: flex;
+    border: solid 2px green;
+    justify-content: space-between;
+}
+
+.sort-list {
+    display: flex;
+    list-style: none;
+}
+
+.link-sorting {
+    margin: 0;
+    margin-right: 26px;
+    padding: 0;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    color: #000000;
+    opacity: 0.3;
+}
+
+.site-list {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    list-style: none;
+}
+
+.site-item {
+    width: 360px;
+    box-sizing: border-box;
+}
+
+
+/* otasdsadfasdf */
+
+.map {
+    width: 100%;
+    height: auto;
+}
+
+.store-title {
+    background-color: #eeeeee;
+    text-align: center;
+}
+
+.catalog-title {
+    padding: 100px;
+}
+
+
+/* pagination */
+
+.paginator__list {
+    display: flex;
+    justify-content: left;
+    list-style: none;
+}
+
+.paginator__item {
+    margin-right: 15px;
+}
+
+.paginator__btn {
+    padding: 15px 20px;
 }
