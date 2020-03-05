@@ -530,18 +530,18 @@ a {
     text-align: left;
 }
 
-.sort {
+.sorting {
     display: flex;
     border: solid 2px green;
     justify-content: space-between;
 }
 
-.sort-list {
+.sorting-list {
     display: flex;
     list-style: none;
 }
 
-.link-sorting {
+.sorting__link {
     margin: 0;
     margin-right: 26px;
     padding: 0;
