@@ -56,9 +56,8 @@
                     <h3 class="slider__title">Долго, дорого, скрупулезно.</h3>
                     <p class="slider__description">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.
                     </p>
-                    <a href="" class="btn slider__btn">Узнать больше</a>
+                    <a href="#" class="btn slider__btn">Узнать больше</a>
                 </li>
-                <!-- поменять на классы -->
                 <li class="slider__item slider__item--math">
                     <h3 class="slider__title">Любим математику как никто другой</h3>
                     <p class="slider__description">Никакого креатива, только математические формулы для расчета идеальных пропорций.
@@ -71,13 +70,11 @@
                     <p class="slider__description"></p>
                     <a href="" class="btn slider__btn">Узнать больше</a>
                 </li>
-                <div class="slider__controls">
-                    <label for="slider__item--expensive"></label>
-                    <label for="slider__item--math"></label>
-                    <label for="slider__item--night"></label>
-
-
-                </div>
+                <!-- <div class="slider__controls">
+                    <label for="slider__item slider__item--expensive"></label>
+                    <label for="slider__item  slider__item--math"></label>
+                    <label for="slider__item slider__item--night"></label>
+                </div> -->
             </ul>
         </section>
         <section class="advantages wrap-center">
@@ -131,14 +128,14 @@
                 <table class="about__table table">
                     <caption class="table__title">с 2004 года Любим точность во всем:</caption>
                     <tr class="table__row">
-                        <td class="table__column">146<sup class="percent">%</sup></td>
-                        <td class="table__column">100<sup class="percent">%</sup></td>
-                        <td class="table__column">50<sup class="percent">%</sup></td>
+                        <td class="table__numeric">100<sup class="table__percent">%</sup></td>
+                        <td class="table__numeric">146<sup class="table__percent">%</sup></td>
+                        <td class="table__numeric">50<sup class="table__percent">%</sup></td>
                     </tr>
                     <tr class="table__row">
-                        <td class="table__column">Уровень самоотдачи</td>
-                        <td class="table__column">Соблюдение сроков</td>
-                        <td class="table__column">Минимальная предоплата</td>
+                        <td class="table__word">Уровень самоотдачи</td>
+                        <td class="table__word">Соблюдение сроков</td>
+                        <td class="table__word">Минимальная предоплата</td>
                     </tr>
                 </table>
             </div>
@@ -194,11 +191,16 @@
                     </a>
                 </li>
                 <li class="social__item">
-                    <a class="social__link social__link--fb" href=""> <img src="img/fb-icon.svg" alt="FB logo"> <span class="visually-hidden">Facebook</span>
+                    <a class="social__link social__link--fb" href="">
+                        <span class="visually-hidden">Facebook</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewbox="0 0 12 22">
+                            <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg>
                     </a>
                 </li>
                 <li class="social__item">
-                    <a class="social__link social__link--inst" href=""> <img src="img/insta-icon.svg" alt="Instagram logo"> <span class="visually-hidden">Instagram</span>
+                    <a class="social__link social__link--inst" href="">
+                        <span class="visually-hidden">Instagram</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewbox="0 0 21 21"><path fill="#FFF" d="M18 0H3C1.35 0 0 1.35 0 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5S12.43 14 10.5 14 7 12.43 7 10.5 8.57 7 10.5 7zM18 18H3V9h1.181A6.504 6.504 0 0 0 4 10.5a6.5 6.5 0 1 0 13 0 6.45 6.45 0 0 0-.181-1.5H18v9zm0-11h-4V3h4v4z"/></svg>
                     </a>
                 </li>
             </ul>
@@ -211,7 +213,9 @@
     </footer>
 
     <div class="modal visually-hidden ">
-        <button class="modal__btn btn-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+        <button class="modal__btn btn-close" type="button">
+            <span class="visually-hidden">
+            Закрыть</span></button>
         <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
             <h2 class="feedback-form__title">Напишите нам</h2>
             <ul class="feedback-form__list">
@@ -229,6 +233,7 @@
                 </li>
             </ul>
             <button class="feedback-form__btn btn-submit" type="submit">Отправить</button>
+
 
         </form>
 

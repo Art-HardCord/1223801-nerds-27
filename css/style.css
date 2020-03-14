@@ -190,7 +190,6 @@ a {
 .slider__item {
     display: none;
     box-sizing: border-box;
-    margin: 0 auto;
     padding-top: 15px;
     padding-right: 20px;
     padding-bottom: 0px;
@@ -324,6 +323,37 @@ a {
     list-style: none;
 }
 
+.about__item {
+    position: relative;
+}
+
+.about__item::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -35px;
+    width: 25px;
+    height: 2px;
+    background-color: #fb565a;
+}
+
+.table__title {
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 41px;
+}
+
+.table__numeric {
+    font-size: 45px;
+    font-weight: bold;
+    padding-top: 49px;
+}
+
+.table__word {
+    width: 105px;
+    padding-right: 24px;
+}
+
 
 /* ////////////////////partners\\\\\\\\\\\\\\ */
 
@@ -342,6 +372,8 @@ a {
     align-items: center;
     flex-wrap: wrap;
     list-style: none;
+    border-top: #eeeeee solid 2px;
+    border-bottom: #eeeeee solid 2px;
 }
 
 .partners__item {
@@ -356,9 +388,9 @@ a {
 .partners__item:after {
     content: "";
     display: inline-block;
-    width: 1px;
-    height: 100%;
-    background-color: red;
+    width: 2px;
+    height: 52px;
+    background-color: #eeeeee;
     position: absolute;
     right: 0;
     top: 0;
@@ -449,7 +481,7 @@ a {
 
 .offer {
     display: flex;
-    margin-left: auto;
+    margin-left: 139px;
     flex-direction: column;
 }
 
@@ -498,6 +530,8 @@ a {
     list-style: none;
     flex-wrap: wrap;
     padding-left: 0;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .feedback-form__title {
@@ -507,18 +541,30 @@ a {
 }
 
 .feedback-form__item {
-    width: 360px;
     justify-content: space-between;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
     height: auto;
+    margin-right: 40px;
     flex-grow: 1;
 }
 
-.feedback-form__item--name,
-.feedback-form__item--mail {
-    width: 400px;
+.modal__btn {
+    position: absolute;
+    top: 80px;
+    right: 90px;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+input .feedback-form__item {
+    border: solid 2px #d7dcde;
+}
+
+label .feedback-form__item {
+    margin-bottom: 12px;
 }
 
 
@@ -551,10 +597,114 @@ a {
     text-align: left;
 }
 
+.store-filter__title {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px;
+    letter-spacing: 0.18px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.double-range__range {
+    width: 260px;
+    margin: 0;
+    margin-top: 48px;
+    margin-bottom: 54px;
+    padding: 0;
+}
+
+.double-range__legend {
+    margin-bottom: 48px;
+}
+
+.double-range__controls {
+    position: relative;
+    height: 80px;
+    margin-bottom: 14px;
+    padding-top: 39px;
+    padding-right: 20px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.double-range__scale {
+    height: 2px;
+    background: #d7dcde;
+}
+
+.double-range__bar {
+    width: 70%;
+    height: 2px;
+    background-color: #00ca74;
+}
+
+.double-range__toggle {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    background-color: #ababab;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.double-range__toggle--min {
+    left: 18px;
+}
+
+.double-range__toggle--max {
+    left: 160px;
+}
+
+.double-range__price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.double-range__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 44%;
+    margin: 0;
+}
+
+.double-range__label {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.double-range__input {
+    font-size: 16px;
+    width: 80px;
+    padding: 8px 5px 8px 13px;
+    line-height: 22px;
+    text-align: center;
+    color: #283136;
+    border: none;
+    border-radius: 5px;
+    background: #f1f1f1;
+    box-sizing: border-box;
+}
+
 .sorting {
     display: flex;
-    border: solid 2px green;
-    justify-content: space-between;
+    justify-content: flex-end;
+    text-transform: uppercase;
+}
+
+.sorting__title {
+    margin-right: auto;
 }
 
 .sorting__list {
