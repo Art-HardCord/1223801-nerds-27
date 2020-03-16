@@ -249,13 +249,6 @@ a {
     background-color: #fb565a;
 }
 
-.slider__item__btn {
-    margin: 0;
-    margin-top: 14px;
-    padding-right: 54px;
-    padding-left: 55px;
-}
-
 .slider__controls {
     position: absolute;
     bottom: 100px;
@@ -573,11 +566,11 @@ a {
     text-align: center;
 }
 
-input .feedback-form__item {
+.feedback-form__item input {
     border: solid 2px #d7dcde;
 }
 
-label .feedback-form__item {
+.feedback-form__item input {
     margin-bottom: 12px;
 }
 
