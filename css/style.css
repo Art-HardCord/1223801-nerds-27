@@ -552,6 +552,17 @@ a {
     flex-basis: 47%;
 }
 
+.feedback-form__item input {
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.13;
+    color: rgba(68, 68, 68, 0.5);
+    padding: 16px 18px;
+    margin-top: 12px;
+}
+
 .modal__btn {
     position: absolute;
     top: 80px;
