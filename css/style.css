@@ -282,6 +282,7 @@ a {
     flex-wrap: wrap;
     list-style: none;
     justify-content: space-between;
+    margin-top: 80px;
 }
 
 .advantages__title {
