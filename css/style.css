@@ -224,18 +224,15 @@ a {
 
 .slider__title {
     width: 515px;
-    padding-top: 56px;
-    padding-right: 0;
-    padding-bottom: 0;
-    padding-left: 0;
     color: #000000;
     font-size: 55px;
     font-weight: 500;
     line-height: 55px;
+    margin-bottom: 0;
 }
 
 .slider__description {
-    padding-top: 26px;
+    padding-top: 0;
     padding-right: 0;
     padding-bottom: 25px;
     padding-left: 0;
@@ -244,7 +241,7 @@ a {
 .slider__btn {
     margin-top: 14px;
     margin-right: 0;
-    margin-bottom: 0;
+    margin-bottom: 80px;
     margin-left: 0;
     padding-right: 54px;
     padding-left: 55px;
