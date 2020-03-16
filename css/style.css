@@ -514,15 +514,12 @@ a {
 
 .modal {
     position: fixed;
-    display: none;
+    display: block;
     z-index: 2;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    padding-top: 55px;
-    padding-right: 100px;
-    padding-bottom: 84px;
-    padding-left: 100px;
+    padding: 84px 100px;
     box-sizing: border-box;
     background: #ffffff;
     box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
@@ -532,28 +529,27 @@ a {
     display: block;
 }
 
+.feedback-form__title {
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 1;
+}
+
 .feedback-form__list {
     display: flex;
     list-style: none;
+    justify-content: space-between;
     flex-wrap: wrap;
     padding-left: 0;
     font-size: 16px;
     font-weight: bold;
 }
 
-.feedback-form__title {
-    font-size: 45px;
-    font-weight: 500;
-    margin-bottom: 49px;
-}
-
 .feedback-form__item {
-    justify-content: space-between;
     display: flex;
     flex-direction: column;
-    height: auto;
-    margin-right: 40px;
-    flex-grow: 1;
+    padding-bottom: 36px;
+    flex-basis: 47%;
 }
 
 .modal__btn {
@@ -564,14 +560,6 @@ a {
     height: 24px;
     vertical-align: middle;
     text-align: center;
-}
-
-.feedback-form__item input {
-    border: solid 2px #d7dcde;
-}
-
-.feedback-form__item input {
-    margin-bottom: 12px;
 }
 
 
