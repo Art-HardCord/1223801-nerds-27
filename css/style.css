@@ -353,11 +353,14 @@ a {
     font-size: 45px;
     font-weight: bold;
     padding-top: 49px;
+    line-height: 0.22;
 }
 
 .table__word {
     width: 105px;
     padding-right: 24px;
+    padding-top: 27px;
+    line-height: 1.13;
 }
 
 
