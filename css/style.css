@@ -259,6 +259,12 @@ a {
     padding-left: 55px;
 }
 
+.slider__controls {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+}
+
 .slider__controls label {
     display: inline-block;
     width: 17px;
