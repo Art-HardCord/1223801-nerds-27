@@ -26,10 +26,9 @@
                     <a class="nav__link" href="">Контакты</a></li>
             </ul>
             <ul class="nav__list nav__list--basket">
-                <li class="nav__item">
+                <li class="nav__item nav__item--basket">
                     <a class="nav__link nav__link--card" href="#">
 
-                        <!-- <img class="nav__basket-logo" src="img/basket-icon.svg" alt="иконка корзины"> Корзина -->
                         <svg class="nav__basket-logo" xmlns="http://www.w3.org/2000/svg" width="15" height="15" alt="иконка корзины" viewbox="0 0 15 15">
                             <circle cx="4.5" cy="13.5" r="1.5" />
                             <circle cx="12.5" cy="13.5" r="1.5" />
@@ -52,7 +51,7 @@
         <section class="slider">
             <h2 class="visually-hidden">Слайды с предложениями</h2>
             <ul class="slider__list wrap-center">
-                <li class="slider__item slider__item--active wrap-center slider__item--expensive">
+                <li class="slider__item slider__item--active  slider__item--expensive">
                     <h3 class="slider__title">Долго, дорого, скрупулезно.</h3>
                     <p class="slider__description">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.
                     </p>
@@ -177,8 +176,9 @@
                 <a class="contacts__btn btn" href="mailto:name@email.com">Напишите нам</a>
             </address>
         </div>
-        <img class="map" src="img/nerds-map.png" width="1440" height="416" alt="Карта с местоположением">
-
+        <iframe class="map-g" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124286!2d30.320894616506045!3d59.93879686904742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1584342335718!5m2!1sru!2sru"
+            width="100%" height="416" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <img class="map visually-hidden" src="img/nerds-map.png" width="1440" height="416" alt="Карта с местоположением">
         <div class="social wrap-center">
             <ul class="social__list">
                 <li class="social__item">
@@ -194,13 +194,16 @@
                     <a class="social__link social__link--fb" href="">
                         <span class="visually-hidden">Facebook</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewbox="0 0 12 22">
-                            <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg>
+                            <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" /></svg>
                     </a>
                 </li>
                 <li class="social__item">
                     <a class="social__link social__link--inst" href="">
                         <span class="visually-hidden">Instagram</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewbox="0 0 21 21"><path fill="#FFF" d="M18 0H3C1.35 0 0 1.35 0 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5S12.43 14 10.5 14 7 12.43 7 10.5 8.57 7 10.5 7zM18 18H3V9h1.181A6.504 6.504 0 0 0 4 10.5a6.5 6.5 0 1 0 13 0 6.45 6.45 0 0 0-.181-1.5H18v9zm0-11h-4V3h4v4z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewbox="0 0 21 21">
+                            <path fill="#FFF"
+                                d="M18 0H3C1.35 0 0 1.35 0 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5S12.43 14 10.5 14 7 12.43 7 10.5 8.57 7 10.5 7zM18 18H3V9h1.181A6.504 6.504 0 0 0 4 10.5a6.5 6.5 0 1 0 13 0 6.45 6.45 0 0 0-.181-1.5H18v9zm0-11h-4V3h4v4z" />
+                            </svg>
                     </a>
                 </li>
             </ul>
@@ -215,7 +218,7 @@
     <div class="modal">
         <button class="modal__btn btn-close" type="button">
             <span class="visually-hidden">
-            Закрыть</span></button>
+                Закрыть</span></button>
         <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
             <h2 class="feedback-form__title">Напишите нам</h2>
             <ul class="feedback-form__list">
@@ -238,7 +241,7 @@
         </form>
 
     </div>
-
+    <script src="js/script.js"></script>
 </body>
 
 </html>

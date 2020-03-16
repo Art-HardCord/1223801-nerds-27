@@ -131,7 +131,7 @@ a {
     box-sizing: border-box;
     text-transform: uppercase;
     justify-content: space-between;
-    padding: 49px 20px 0 20px;
+    padding-top: 49px;
 }
 
 .nav__link {
@@ -159,18 +159,13 @@ a {
 }
 
 .nav__item {
-    padding-right: 23px;
-    padding-bottom: 0;
-    padding-left: 23px;
+    padding-right: 48px;
 }
 
-
-/* .nav__link--card {
-    padding-left: 500px;
-} */
-
-
-/* .nav__link--card-icon { */
+.nav__item--basket {
+    padding-right: 0;
+    position: relative;
+}
 
 
 /* /////////////slider\\\\\\\\\\\\\\\ */
@@ -194,6 +189,7 @@ a {
     padding-top: 15px;
     padding-right: 20px;
     padding-bottom: 0px;
+    width: 100%;
 }
 
 .slider__item--active {
@@ -274,7 +270,6 @@ a {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    justify-content: space-between;
     margin-top: 80px;
     padding-left: 0;
 }
@@ -289,6 +284,8 @@ a {
 
 .advantages__item {
     width: 300px;
+    margin-right: 90px;
+    margin-bottom: 50px;
 }
 
 
@@ -299,6 +296,8 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    border-top: #eeeeee solid 2px;
+    padding-top: 40px;
 }
 
 .about__content {
@@ -361,6 +360,7 @@ a {
 
 .partners {
     position: relative;
+    margin-bottom: 40px;
 }
 
 .partners__list {
@@ -732,19 +732,15 @@ a {
     opacity: 0.3;
 }
 
-.site-list {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    list-style: none;
-    border: solid 2px green;
-}
 
-.site-item {
-    width: 360px;
-    box-sizing: border-box;
+/* templates */
+
+.templates__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    position: relative;
 }
 
 
