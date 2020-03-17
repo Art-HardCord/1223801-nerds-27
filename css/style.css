@@ -598,6 +598,11 @@
     .modal__btn:hover {
         opacity: 1;
     }
+    
+    .feedback-form__btn {
+        width: 260px;
+        background-color: #fb565a;
+    }
     /* ////////////catalog\\\\\\\\\\\\\\ */
     
     .store {
