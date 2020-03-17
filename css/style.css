@@ -673,8 +673,9 @@
         color: #000000;
         text-transform: uppercase;
     }
+    /* DOUBLE RAAAGE! */
     
-    .double-range__range {
+    .double-range {
         width: 260px;
         margin: 0;
         margin-top: 48px;
