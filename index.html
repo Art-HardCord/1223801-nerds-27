@@ -70,6 +70,9 @@
                     <a href="" class="btn slider__btn">Узнать больше</a>
                 </li>
                 <div class="slider__controls">
+                    <input type="radio" name="point" id="slide1" checked>
+                    <input type="radio" name="point" id="slide2">
+                    <input type="radio" name="point" id="slide3">
                     <label for="slider__item slider__item--expensive"></label>
                     <label for="slider__item  slider__item--math"></label>
                     <label for="slider__item slider__item--night"></label>
@@ -203,7 +206,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewbox="0 0 21 21">
                             <path fill="#FFF"
                                 d="M18 0H3C1.35 0 0 1.35 0 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5S12.43 14 10.5 14 7 12.43 7 10.5 8.57 7 10.5 7zM18 18H3V9h1.181A6.504 6.504 0 0 0 4 10.5a6.5 6.5 0 1 0 13 0 6.45 6.45 0 0 0-.181-1.5H18v9zm0-11h-4V3h4v4z" />
-                            </svg>
+                        </svg>
                     </a>
                 </li>
             </ul>
@@ -215,7 +218,7 @@
         </div>
     </footer>
 
-    <div class="modal">
+    <div class="modal visually-hidden">
         <button class="modal__btn btn-close" type="button">
             <span class="visually-hidden">
                 Закрыть</span></button>
@@ -231,9 +234,10 @@
                     <input type="email" name="mail" id="mail" placeholder="email@example.com" required="">
                 </li>
 
-                <li class="feedback-form__item feedback-form__item--text">
+
+                <li class="feedback-form__text">
                     <label for="text">Текст письма:</label>
-                    <textarea name="text" id="text" rows="8" cols="80" placeholder="В свободной форме" required=""></textarea>
+                    <textarea class="feedback-form__textarea" name="text" id="text" placeholder="В свободной форме" required=""></textarea>
                 </li>
             </ul>
             <button class="feedback-form__btn btn-submit" type="submit">Отправить</button>
