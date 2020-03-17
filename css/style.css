@@ -170,7 +170,6 @@
     
     .slider {
         position: relative;
-        box-sizing: border-box;
         background-color: #eeeeee;
     }
     
@@ -179,6 +178,7 @@
         list-style: none;
         margin-top: 0;
         padding-left: 0;
+        position: relative;
     }
     
     .slider__item {
@@ -242,8 +242,7 @@
         color: #ffffff;
         background-color: #fb565a;
     }
-    
-    .slider__controls {
+    /* .slider__controls {
         position: absolute;
         bottom: 100px;
         left: 50%;
@@ -260,7 +259,7 @@
         border: 2px solid #ffffff;
         border-radius: 50%;
         cursor: pointer;
-    }
+    } */
     /* ////////////////advantages\\\\\\\\\\\\\\\\\\\\\ */
     
     .advantages__list {

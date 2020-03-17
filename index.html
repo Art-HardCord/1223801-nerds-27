@@ -50,7 +50,11 @@
         <h1 class="visually-hidden">Дизайн-студия "Нёрдс"</h1>
         <section class="slider">
             <h2 class="visually-hidden">Слайды с предложениями</h2>
+            <input type="radio" name="point" id="slider__item--expensive" checked>
+            <input type="radio" name="point" id="slider__item--math">
+            <input type="radio" name="point" id="slider__item--night">
             <ul class="slider__list wrap-center">
+
                 <li class="slider__item slider__item--active  slider__item--expensive">
                     <h3 class="slider__title">Долго, дорого, скрупулезно.</h3>
                     <p class="slider__description">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.
@@ -70,9 +74,7 @@
                     <a href="" class="btn slider__btn">Узнать больше</a>
                 </li>
                 <div class="slider__controls">
-                    <input type="radio" name="point" id="slide1" checked>
-                    <input type="radio" name="point" id="slide2">
-                    <input type="radio" name="point" id="slide3">
+
                     <label for="slider__item slider__item--expensive"></label>
                     <label for="slider__item  slider__item--math"></label>
                     <label for="slider__item slider__item--night"></label>
@@ -218,7 +220,7 @@
         </div>
     </footer>
 
-    <div class="modal">
+    <div class="modal visually-hidden">
         <button class="modal__btn btn-close" type="button">
             <span class="visually-hidden">
                 Закрыть</span></button>
