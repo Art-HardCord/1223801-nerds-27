@@ -840,7 +840,7 @@
     }
     
     .templates__item:hover .templates__info {
-        display: block;
+        display: flex;
     }
     
     .templates__info {
@@ -850,7 +850,10 @@
         position: absolute;
         bottom: 0;
         background-color: #eeeeee;
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
         font-size: 18px;
         font-weight: bold;
         line-height: 1.67;
@@ -871,9 +874,7 @@
     }
     
     .templates__link {
-        display: inline-block;
         background-color: #fb565a;
-        vertical-align: bottom;
     }
     /* otasdsadfasdf */
     
