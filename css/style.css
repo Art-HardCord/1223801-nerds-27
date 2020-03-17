@@ -808,16 +808,19 @@
         width: 760px;
         padding: 0;
         position: relative;
-        border: #fb565a solid 2px;
     }
     
     .templates__item {
-        display: inline-block;
+        display: block;
         width: 360px;
         height: 576px;
         border: 1px solid rgba(0, 1, 1, 0.1);
         position: relative;
-        margin: 40px 40px 33px 0;
+        margin: 59px 0 33px 0;
+    }
+    
+    .templates__item:nth-child(2n) {
+        margin-left: 40px;
     }
     
     .templates__item::before {
