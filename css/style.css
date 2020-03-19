@@ -163,6 +163,11 @@
         flex-wrap: wrap;
     }
     
+    .nav__link--current {
+        padding-bottom: 6px;
+        border-bottom: #fb565a solid 2px;
+    }
+    
     .nav__item {
         padding-right: 48px;
     }
@@ -488,7 +493,6 @@
     .social__link:active {
         background-color: #d7373b;
         box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
-        color: rgba(255, 255, 255, 0.3);
     }
     
     .offer {
@@ -725,6 +729,7 @@
     .store-filter__submit:active {
         background-color: #d5d5d5;
         box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+        color: rgba(0, 0, 0, 0.3);
     }
     /* DOUBLE RAAAGE! */
     
@@ -850,8 +855,13 @@
         opacity: 0.3;
     }
     
-    .sorting__icon-color--active {
-        fill: #000000;
+    .sorting__link:hover,
+    .sorting__link:focus {
+        opacity: 0.6;
+    }
+    
+    .sorting__link:active {
+        opacity: 1;
     }
     /* templates */
     
@@ -968,12 +978,25 @@
         display: flex;
         justify-content: left;
         list-style: none;
+        padding: 30px 0;
     }
     
     .paginator__item {
         margin-right: 15px;
     }
     
+    .paginator__btn:hover,
+    .paginator__btn:focus {
+        background-color: #dfdfdf;
+    }
+    
     .paginator__btn {
-        padding: 15px 20px;
+        padding: 15px 18px;
+        height: 43px;
+        vertical-align: center;
+    }
+    
+    .paginator__btn--current {
+        background-color: white;
+        border: solid 3px #dbdbdb;
     }
