@@ -50,12 +50,9 @@
         <h1 class="visually-hidden">Дизайн-студия "Нёрдс"</h1>
         <section class="slider">
             <h2 class="visually-hidden">Слайды с предложениями</h2>
-            <input type="radio" name="point" id="slider__item--expensive" checked>
-            <input type="radio" name="point" id="slider__item--math">
-            <input type="radio" name="point" id="slider__item--night">
             <ul class="slider__list wrap-center">
 
-                <li class="slider__item slider__item--active  slider__item--expensive">
+                <li class="slider__item  slider__item--expensive">
                     <h3 class="slider__title">Долго, дорого, скрупулезно.</h3>
                     <p class="slider__description">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.
                     </p>
@@ -76,10 +73,13 @@
 
             </ul>
             <div class="slider__controls">
+                <input class="slider__input" type="radio" name="point" id="slider__item--expensive" checked>
+                <input class="slider__input" type="radio" name="point" id="slider__item--math">
+                <input class="slider__input" type="radio" name="point" id="slider__item--night">
 
-                <label for="slider__item slider__item--expensive"></label>
-                <label for="slider__item  slider__item--math"></label>
-                <label for="slider__item slider__item--night"></label>
+                <label class="slider__label" for="slider__item--expensive"></label>
+                <label class="slider__label" for="slider__item--math"></label>
+                <label class="slider__label" for="slider__item--night"></label>
             </div>
         </section>
         <section class="advantages wrap-center">
@@ -149,7 +149,7 @@
             <h2 class="visually-hidden">Наши партнёры</h2>
             <ul class="partners__list">
                 <li class="partners__item">
-                    <a href="#" class="partners__link">
+                    <a href="htmlacademy.ru" class="partners__link">
                         <img src="img/partners-htmlacademy-logo.png" alt="HTML Academy" width="199" height="68"></a>
                 </li>
                 <li class="partners__item">
