@@ -145,7 +145,8 @@
         line-height: 30px;
     }
     
-    .nav__link:hover {
+    .nav__link:hover,
+    .nav__link:focus {
         color: #fb565a;
     }
     
@@ -381,7 +382,8 @@
         opacity: 0.2;
     }
     
-    .partners__item:hover {
+    .partners__item:hover,
+    .partners__item:focus {
         opacity: 1;
     }
     
@@ -481,6 +483,12 @@
     .social__link:hover,
     .social__link:focus {
         background-color: #e74246;
+    }
+    
+    .social__link:active {
+        background-color: #d7373b;
+        box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+        color: rgba(255, 255, 255, 0.3);
     }
     
     .offer {
@@ -638,6 +646,16 @@
     .store-filter__label {
         padding: 0 0 20px 35px;
         position: relative;
+        opacity: 0.4;
+    }
+    
+    .store-filter__label:hover,
+    .store-filter__label:focus {
+        opacity: 1;
+    }
+    
+    .store-filter__input:disabled+.store-filter__label {
+        opacity: 0.1;
     }
     
     .store-filter__label--radio::before {
