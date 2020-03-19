@@ -920,6 +920,17 @@
     .templates__link {
         background-color: #fb565a;
         margin-bottom: 43px;
+        color: #ffffff;
+    }
+    
+    .templates__link:hover,
+    .templates__link:focus {
+        background-color: #e74246;
+    }
+    
+    .templates__link:active {
+        background-color: #d7373b;
+        box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
     }
     /* otasdsadfasdf */
     
