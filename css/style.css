@@ -185,7 +185,6 @@
     .slider {
         position: relative;
         background-color: #eeeeee;
-        overflow-x: hidden;
     }
     
     .slider__list {
@@ -198,8 +197,7 @@
     
     .slider__item {
         box-sizing: border-box;
-        opacity: 0;
-        z-index: 0;
+        display: none;
         padding-top: 15px;
         padding-right: 20px;
         padding-bottom: 0px;
@@ -227,11 +225,12 @@
         background-repeat: no-repeat;
     }
     
-    #slider__input:checked~.slider__list>.slide_item--expensive,
-    #slider__input:checked~.slider__list>.slide_item--math {
-        opacity: 1;
-        z-index: 1;
+    .slider__input:checked+.slider__list>.slider__item--expensive,
+    .slider__input:checked+.slider__list>.slider__item--math,
+    .slider__input:checked+.slider__list>.slider__item--night {
+        display: block;
     }
+    /* Переместил, исправил опечатки  и нифига не получается */
     
     .slider__title {
         width: 515px;
@@ -404,7 +403,9 @@
         background-color: #eeeeee;
         position: absolute;
         right: 0;
-        top: 0;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        ;
     }
     
     .partners__item:last-child:after {
@@ -414,8 +415,6 @@
     
     .footer {
         position: relative;
-        overflow-x: hidden;
-        /* полоса отсюда методом исключения, надо найти кто вылезает */
     }
     
     .contacts {
@@ -961,6 +960,13 @@
     .map {
         width: 100%;
         height: auto;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    
+    .map-g {
+        position: relative;
     }
     
     .store-title {
